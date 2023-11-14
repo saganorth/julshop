@@ -1,0 +1,64 @@
+.header {
+  background-color: #d32f2f;
+  color: white;
+  font-size: 2rem; 
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homeLink,
+.cartLink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem; 
+}
+
+
+.homeLink:hover,
+.cartLink:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5rem; 
+  }
+
+  .navbar {
+    padding: 0 20px; 
+  }
+
+  .homeLink,
+  .cartLink {
+    font-size: 1.2rem; 
+  }
+
+  .productList {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.3rem; 
+  }
+
+  .homeLink,
+  .cartLink {
+    font-size: 1rem; 
+  }
+
+  .productList {
+    grid-template-columns: 1fr;
+  }
+}
